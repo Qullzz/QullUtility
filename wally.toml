@@ -1,7 +1,9 @@
 [package]
-name = "user/qullutility"
+name = "qullzz/qullutility"
+description = "A short summary of your code library."
 version = "0.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
+license = "MIT"
 realm = "shared"
 
 [dependencies]
