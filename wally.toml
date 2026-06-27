@@ -1,6 +1,6 @@
 [package]
 name = "qullzz/qullutility"
-description = "A short summary of your code library."
+description = "A varying utility module to ease development."
 version = "0.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 license = "MIT"
