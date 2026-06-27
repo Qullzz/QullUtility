@@ -1,5 +1,5 @@
 [package]
-name = "qullzz/qullutility"
+name = "qullzz/utility"
 description = "A varying utility module to ease development."
 version = "0.0.1"
 registry = "https://github.com/UpliftGames/wally-index"
