@@ -898,7 +898,7 @@ The disconnect function will be passed as the first argument, followed by the si
 
 <em>Some weird message.</em>.
 ]]
-function Utility.Connect<T...>( signal: SignalLike<T...>, callback: ( disconnect: () -> (), T... ) -> () ): ()
+function Utility.Connect<T...>( signal: SignalLike<T...>, callback: ( disconnect: () -> (), T... ) -> () ): (() -> ())
 	local connection: ConnectionLike?
 	
 	local function disconnect(): ()
@@ -912,6 +912,8 @@ function Utility.Connect<T...>( signal: SignalLike<T...>, callback: ( disconnect
 	connection = signal:Connect(function( ... )
 		callback( disconnect, ... )
 	end)
+	
+	return disconnect
 end
 
 --[[
